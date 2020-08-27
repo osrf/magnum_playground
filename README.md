@@ -57,6 +57,8 @@ And run our first application:
 ./src/MyApplication
 ```
 
+I know, a black screen is not fun...
+
 ![A first sample](images/magnum-bootstrap.png)
 
 Other branches of `magnum-bootstrap` contain examples with other toolkits such
