@@ -99,6 +99,9 @@ You should be able to visualize a cube that can be rotated with the mouse:
 
 ![An obj loader sample](images/magnum_viewer_obj.png)
 
+References:
+  * [Viewer example](https://doc.magnum.graphics/magnum/examples-viewer.html)
+
 
 ## An `glb` loader example
 
@@ -135,6 +138,17 @@ the mouse:
 
 ![An glb loader sample](images/magnum_viewer_glb.png)
 
+Here's another example with other assets used in Gazebo. Download Magnum.glb
+from here: https://www.dropbox.com/sh/xxlv8zfl09p7nbn/AAAvsuPoMcDobAf4dKKTNWdYa?dl=0&preview=Magnum.glb
+
+Then launch the `viewer`:
+
+```
+./magnum-viewer ~/Downloads/Magnum.glb
+```
+
+![An scene loader in the browser](images/magnum_custom_scene.png)
+
 The `Magnum Player` is a very nice example for loading scenes in the browser:
 
 https://doc.magnum.graphics/magnum/magnum-player.html
@@ -143,3 +157,8 @@ Click on the `Live web version` button, and then, drag and drop into the scene
 the same `glb` file used before:
 
 ![An scene loader in the browser](images/magnum_player.png)
+
+References:
+  * [Viewer example](https://doc.magnum.graphics/magnum/examples-viewer.html)
+  * [Magnum Player](https://doc.magnum.graphics/magnum/magnum-player.html)
+  * [Magnum architecture diagram](https://magnum.graphics/features/extras/)
