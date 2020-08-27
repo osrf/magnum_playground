@@ -59,8 +59,82 @@ And run our first application:
 
 ![A first sample](images/magnum-bootstrap.png)
 
+Other branches of `magnum-bootstrap` contain examples with other toolkits such
+as GLFW or Qt.
+
 References:
   * [Building Corrade](https://doc.magnum.graphics/corrade/building-corrade.html#building-corrade-manual)
   * [Building Magnum](https://doc.magnum.graphics/magnum/building.html#building-manual)
   * [Building and running magnum-bootstrap](https://doc.magnum.graphics/magnum/getting-started.html)
 
+
+## An `obj` loader example
+
+Magnum is very modular and comes with optional features that can be enabled on
+demand.
+
+Next, we're going to execute an example that loads an `.obj` file. We'll need to
+enable the basic `obj` importer included in Magnum:
+
+```
+cd ~/workspace/magnum/build
+cmake -DCMAKE_INSTALL_PREFIX=/usr -DWITH_SDL2APPLICATION=ON -DWITH_ANYIMAGEIMPORTER=ON -DWITH_ANYSCENEIMPORTER=ON -DWITH_OBJIMPORTER=ON ..
+make -j
+sudo make -j install
+```
+
+Now, let's clone magnum-examples, compile, run the `viewer` example:
+
+```
+mkdir -p ~/workspace && cd ~/workspace
+git clone https://github.com/mosra/magnum-examples.git
+cd magnum-examples/src/viewer/
+mkdir build && cd build
+cmake ..
+make -j
+./magnum-viewer ~/workspace/magnum-examples/src/viewer/scene.obj
+```
+
+You should be able to visualize a cube that can be rotated with the mouse:
+
+```
+./src/magnum_viewer_obj
+```
+
+
+## An `glb` loader example
+
+Extra Magnum features can be installed via plugins. In this example, we'll load
+a `glb` scene via the `TinyGltfImporter` contained in `magnum-plugins`.
+
+Let's clone `magnum-plugins`:
+
+```
+mkdir -p ~/workspace && cd ~/workspace
+git clone https://github.com/mosra/magnum-plugins.git
+cd magnum-plugins
+git checkout v2020.06
+```
+
+By default, no plugins are compiled, let's enabled the `TinyGltfImporter`:
+
+```
+mkdir build && cd build
+cmake -DCMAKE_INSTALL_PREFIX=/usr -DWITH_STBIMAGEIMPORTER=ON -DWITH_TINYGLTFIMPORTER=ON ..
+make -j
+sudo make -j install
+```
+
+Let's go back to our `viewer` example and load a scene with a custom texture:
+
+```
+cd ~/workspace/magnum-examples/src/viewer/build
+./magnum-viewer ~/workspace/magnum-examples/src/viewer/scene.glb
+```
+
+You should be able to visualize our well-known monkey that can be rotated with
+the mouse:
+
+```
+./src/magnum_viewer_obj
+```
