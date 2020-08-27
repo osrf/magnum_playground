@@ -34,7 +34,7 @@ make -j
 sudo make -j install
 ```
 
-For testing, download the magnum-bootstrap project:
+For testing, download the `magnum-bootstrap` project:
 
 ```
 mkdir -p ~/workspace && cd ~/workspace
@@ -43,7 +43,7 @@ cd magnum-bootstrap
 git checkout base
 ```
 
-Compile magnum-bootstrap:
+Compile `magnum-bootstrap`:
 
 ```
 mkdir build && cd build
@@ -65,7 +65,7 @@ as GLFW or Qt.
 References:
   * [Building Corrade](https://doc.magnum.graphics/corrade/building-corrade.html#building-corrade-manual)
   * [Building Magnum](https://doc.magnum.graphics/magnum/building.html#building-manual)
-  * [Building and running magnum-bootstrap](https://doc.magnum.graphics/magnum/getting-started.html)
+  * [Building and running `magnum-bootstrap`](https://doc.magnum.graphics/magnum/getting-started.html)
 
 
 ## An `obj` loader example
@@ -83,7 +83,7 @@ make -j
 sudo make -j install
 ```
 
-Now, let's clone magnum-examples, compile, run the `viewer` example:
+Now, let's clone `magnum-examples`, compile, run the `viewer` example:
 
 ```
 mkdir -p ~/workspace && cd ~/workspace
@@ -134,3 +134,12 @@ You should be able to visualize our well-known monkey that can be rotated with
 the mouse:
 
 ![An glb loader sample](images/magnum_viewer_glb.png)
+
+The `Magnum Player` is a very nice example for loading scenes in the browser:
+
+https://doc.magnum.graphics/magnum/magnum-player.html
+
+Click on the `Live web version` button, and then, drag and drop into the scene
+the same `glb` file used before:
+
+![An scene loader in the browser](images/magnum_player.png)
