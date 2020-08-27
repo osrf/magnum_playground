@@ -97,9 +97,7 @@ make -j
 
 You should be able to visualize a cube that can be rotated with the mouse:
 
-```
-./src/magnum_viewer_obj
-```
+![An obj loader sample](images/magnum_viewer_obj.png)
 
 
 ## An `glb` loader example
@@ -135,6 +133,4 @@ cd ~/workspace/magnum-examples/src/viewer/build
 You should be able to visualize our well-known monkey that can be rotated with
 the mouse:
 
-```
-./src/magnum_viewer_obj
-```
+![An glb loader sample](images/magnum_viewer_glb.png)
