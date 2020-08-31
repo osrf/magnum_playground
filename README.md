@@ -104,7 +104,7 @@ References:
   * [Viewer example](https://doc.magnum.graphics/magnum/examples-viewer.html)
 
 
-## An `glb` loader example
+## A `glb` loader example
 
 Extra Magnum features can be installed via plugins. In this example, we'll load
 a `glb` scene via the `TinyGltfImporter` contained in `magnum-plugins`.
@@ -137,7 +137,7 @@ cd ~/workspace/magnum-examples/src/viewer/build
 You should be able to visualize our well-known monkey that can be rotated with
 the mouse:
 
-![An glb loader sample](images/magnum_viewer_glb.png)
+![A glb loader sample](images/magnum_viewer_glb.png)
 
 Here's another example with other assets used in Gazebo. Download Magnum.glb
 from here: https://www.dropbox.com/sh/xxlv8zfl09p7nbn/AAAvsuPoMcDobAf4dKKTNWdYa?dl=0&preview=Magnum.glb
