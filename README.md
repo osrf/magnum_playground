@@ -60,8 +60,7 @@ And run our first application:
 ![A first sample](images/magnum-bootstrap.png)
 
 I know, a black screen is not fun...Other branches of `magnum-bootstrap` contain
-examples with other toolkits such
-as GLFW or Qt.
+examples with other toolkits such as GLFW or Qt.
 
 References:
   * [Building Corrade](https://doc.magnum.graphics/corrade/building-corrade.html#building-corrade-manual)
@@ -139,7 +138,7 @@ the mouse:
 
 ![A glb loader sample](images/magnum_viewer_glb.png)
 
-Here's another example with other assets used in Gazebo. Download Magnum.glb
+Here's another example with other assets used in Gazebo. Download `Magnum.glb`
 from here: https://www.dropbox.com/sh/xxlv8zfl09p7nbn/AAAvsuPoMcDobAf4dKKTNWdYa?dl=0&preview=Magnum.glb
 
 Then launch the `viewer`:
@@ -148,7 +147,7 @@ Then launch the `viewer`:
 ./magnum-viewer ~/Downloads/Magnum.glb
 ```
 
-![An scene loader in the browser](images/magnum_custom_scene.png)
+![A scene loader in the browser](images/magnum_custom_scene.png)
 
 The `Magnum Player` is a very nice example for loading scenes in the browser:
 
@@ -157,7 +156,7 @@ https://doc.magnum.graphics/magnum/magnum-player.html
 Click on the `Live web version` button, and then, drag and drop into the scene
 the same `glb` file used before:
 
-![An scene loader in the browser](images/magnum_player.png)
+![A scene loader in the browser](images/magnum_player.png)
 
 References:
   * [Viewer example](https://doc.magnum.graphics/magnum/examples-viewer.html)
